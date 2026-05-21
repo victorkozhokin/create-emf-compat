@@ -1,5 +1,8 @@
 # Create-EMF Compat (Skyhook)
 
+## [Modrinth](https://modrinth.com/mod/create-emf-compat-(skyhook))
+
+
 A small client-side mod for **Minecraft 1.21.1** (NeoForge) that pauses **Entity Model Features** player animations while using Create's **Skyhook** feature, like chain and rope riding from Aeronautics.
 
 Tested with Fresh Animations: Player Extension but it should work with any player animation RP.
@@ -18,4 +21,4 @@ Tested with Fresh Animations: Player Extension but it should work with any playe
 
 Output jar: `build/libs/create_emf_compat-1.0.jar`
 
-For development, put the Create and EMF jars in `libs/` (see `build.gradle`).
+For development, put the Create, EMF and ETF jars in `libs/` (see `build.gradle`).
