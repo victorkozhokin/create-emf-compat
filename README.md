@@ -7,6 +7,10 @@ A small client-side mod for **Minecraft 1.21.1** (NeoForge) that pauses **Entity
 
 Tested with Fresh Animations: Player Extension but it should work with any player animation RP.
 
+## Video
+
+[![EMF Skyhook Animation Pause](https://img.youtube.com/vi/072A-CVufho/maxresdefault.jpg)](https://youtu.be/072A-CVufho?si=IvY1qwvvB6avab2r)
+
 ## Dependencies
 
 - [NeoForge](https://neoforged.net/) 21.1+
