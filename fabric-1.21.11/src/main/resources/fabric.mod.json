@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "create-fly-emf-compat",
+  "version": "${version}",
+  "name": "Create Fly: EMF Compat (SkyHook)",
+  "description": "Pauses EMF Animations while using Create Fly Skyhook feature",
+  "authors": ["STRadaT"],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/create-fly-emf-compat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "strm.CreateFlyEmfCompatDataGenerator"
+    ],
+    "client": [
+      "strm.CreateFlyEmfCompatClient"
+    ]
+  },
+  "mixins": [
+    "create-fly-emf-compat.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

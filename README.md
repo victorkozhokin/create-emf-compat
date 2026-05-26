@@ -1,9 +1,9 @@
-# Create-EMF Compat (Skyhook)
+# Create Fly - EMF Compat (Skyhook)
 
 ## [Modrinth](https://modrinth.com/mod/create-emf-compat-(skyhook))
 
 
-A small client-side mod for **Minecraft 1.21.1** (NeoForge) that pauses **Entity Model Features** player animations while using Create's **Skyhook** feature, like chain and rope riding from Aeronautics.
+A small client-side mod for **Minecraft 1.21.11** (Fabric) that pauses **Entity Model Features** player animations while using Create's **Skyhook**.
 
 Tested with Fresh Animations: Player Extension but it should work with any player animation RP.
 
@@ -15,8 +15,8 @@ And side effects to Climbable Ropes for Create Aeronautics because Climbable rop
 
 ## Dependencies
 
-- [NeoForge](https://neoforged.net/) 21.1+
-- [Create](https://modrinth.com/mod/create) 6.0.10+
+- [Fabric](https://fabricmc.net) 21.1+
+- [Create Fly](https://modrinth.com/mod/create-fly) 6.0.9+
 - [Entity Model Features](https://modrinth.com/mod/entity-model-features) 3.2.4+
 - [Entity Texture Features]() Required for EMF
 
@@ -29,6 +29,6 @@ And side effects to Climbable Ropes for Create Aeronautics because Climbable rop
 ./gradlew build
 ```
 
-Output jar: `build/libs/create_emf_compat-1.0.jar`
+Output jar: `build/libs/create_fly_emf_compat-1.0.jar`
 
 For development, put the Create, EMF and ETF jars in `libs/` (see `build.gradle`).
