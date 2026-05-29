@@ -14,16 +14,10 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "test" {
+        "create-fly-emf-compat" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
-    }
-}
-
-fabricApi {
-    configureDataGeneration {
-        client = true
     }
 }
 
@@ -43,29 +37,31 @@ repositories {
 
 dependencies {
 
-//    implementation project(":common")
-
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-//
-    compileOnly files('fabric-1.21.11/libs/create-fly-1.21.11-6.0.9-5.jar')
-    compileOnly files('fabric-1.21.11/libs/entity_model_features-3.2.4-1.21.11-fabric.jar')
-    compileOnly files('fabric-1.21.11/libs/entity_texture_features_1.21.11-fabric-7.1.jar')
+
+    compileOnly files('libs/create-fly-1.21.11-6.0.9-5.jar')
+    modCompileOnly files('libs/entity_model_features-3.2.4-1.21.11-fabric.jar')
+    modCompileOnly files('libs/entity_texture_features_1.21.11-fabric-7.1.jar')
 }
 
 processResources {
-    inputs.property "version", project.version
-    inputs.property "minecraft_version", project.minecraft_version
-    inputs.property "loader_version", project.loader_version
+    def localVersion = project.version
+    def localMcVersion = project.minecraft_version
+    def localLoaderVersion = project.loader_version
+
+    inputs.property "version", localVersion
+    inputs.property "minecraft_version", localMcVersion
+    inputs.property "loader_version", localLoaderVersion
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version,
-                "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+        expand "version": localVersion,
+                "minecraft_version": localMcVersion,
+                "loader_version": localLoaderVersion
     }
 }
 

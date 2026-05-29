@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "create-fly-emf-compat",
   "version": "${version}",
-  "name": "Create Fly:EMF Compat (SkyHook)",
+  "name": "Create Fly: EMF Compat (SkyHook)",
   "description": "Pauses EMF Animations while using Create Fly Skyhook feature",
   "authors": ["STRadaT"],
   "contact": {},
@@ -10,9 +10,6 @@
   "icon": "assets/create-fly-emf-compat/icon.png",
   "environment": "client",
   "entrypoints": {
-    "fabric-datagen": [
-      "strm.CreateFlyEmfCompatDataGenerator"
-    ],
     "client": [
       "strm.CreateFlyEmfCompatClient"
     ]
@@ -23,6 +20,6 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }

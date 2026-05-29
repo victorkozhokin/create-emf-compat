@@ -10,9 +10,6 @@
   "icon": "assets/create-fly-emf-compat/icon.png",
   "environment": "client",
   "entrypoints": {
-    "fabric-datagen": [
-      "strm.CreateFlyEmfCompatDataGenerator"
-    ],
     "client": [
       "strm.CreateFlyEmfCompatClient"
     ]
@@ -23,6 +20,6 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }
