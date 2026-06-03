@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="21" />
+    <bytecodeTargetLevel target="21">
+      <module name="create-fly-emf-compat.fabric-26.1.2" target="25" />
+      <module name="create-fly-emf-compat.fabric-26.1.2.client" target="25" />
+      <module name="create-fly-emf-compat.fabric-26.1.2.main" target="25" />
+      <module name="create-fly-emf-compat.fabric-26.1.2.test" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,6 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/fabric-1.21.11" />
+            <option value="$PROJECT_DIR$/fabric-26.1.2" />
+            <option value="$PROJECT_DIR$/neoforge-1.21.1" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="true" />
