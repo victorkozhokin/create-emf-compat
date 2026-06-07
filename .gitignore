@@ -3,3 +3,4 @@
 **/.gradle/
 **/libs/
 /.idea/
+.DS_Store

@@ -13,7 +13,7 @@ repositories {
 }
 
 base {
-    archivesName = 'create-emf-compat'
+    archivesName = project.archives_base_name
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -95,6 +95,7 @@ dependencies {
     compileOnly files('libs/create-1.21.1-6.0.10.jar')
     compileOnly files('libs/entity_model_features-3.2.4-1.21-neoforge.jar')
     compileOnly files('libs/entity_texture_features_1.21-neoforge-7.1.jar')
+    compileOnly files('libs/simulated-neoforge-1.21.1-1.2.1.jar')
     // Example mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
