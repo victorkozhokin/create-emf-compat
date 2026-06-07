@@ -2,10 +2,14 @@
   "required": true,
   "minVersion": "0.8",
   "package": "strm.createemfcompat.mixin",
+  "plugin": "strm.createemfcompat.mixin.AeronauticsMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
-    "PlayerSkyhookRendererAccessor"
+    "PlayerSkyhookRendererAccessor",
+    "PlayerHoldingHandleRendererAccessor",
+    "PlayerHoldingHandleRendererMixin",
+    "EMFModelPartRootMixin"
   ],
   "injectors": {
     "defaultRequire": 1
