@@ -10,6 +10,12 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    exclusiveContent {
+        forRepository {
+            maven { url = 'https://api.modrinth.com/maven' }
+        }
+        filter { includeGroup 'maven.modrinth' }
+    }
 }
 
 base {
@@ -90,12 +96,17 @@ neoForge {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 
-dependencies {
+configurations {
+    aeronauticsBundled
+}
 
-    compileOnly files('libs/create-1.21.1-6.0.10.jar')
-    compileOnly files('libs/entity_model_features-3.2.4-1.21-neoforge.jar')
-    compileOnly files('libs/entity_texture_features_1.21-neoforge-7.1.jar')
-    compileOnly files('libs/simulated-neoforge-1.21.1-1.2.1.jar')
+dependencies {
+    compileOnly 'maven.modrinth:create:6.0.10+mc1.21.1'
+    compileOnly 'maven.modrinth:entity-model-features:3.2.4-neoforge-1.21'
+    compileOnly 'maven.modrinth:entitytexturefeatures:7.1-neoforge-1.21'
+
+    aeronauticsBundled 'maven.modrinth:create-aeronautics:1.2.1+mc1.21.1'
+    compileOnly files(layout.buildDirectory.file('extracted-aeronautics/simulated-neoforge.jar'))
     // Example mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -108,7 +119,7 @@ dependencies {
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
 
     // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
+    // implementation files("libs/coolmod-${mc_version}:${coolmod_version}.jar")
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
@@ -117,6 +128,20 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
+
+task extractAeronautics(type: Copy) {
+    from(zipTree(configurations.aeronauticsBundled.singleFile).matching {
+        include 'META-INF/jarjar/dev.simulated_team.simulated.simulated-neoforge-*.jar'
+    })
+    into layout.buildDirectory.dir('extracted-aeronautics')
+    rename { 'simulated-neoforge.jar' }
+    eachFile { fileCopyDetails ->
+        fileCopyDetails.path = fileCopyDetails.name
+    }
+    includeEmptyDirs = false
+}
+
+compileJava.dependsOn extractAeronautics
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.

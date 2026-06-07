@@ -11,6 +11,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-26.1.2/create-emf-compat.fabric-26.1.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-26.1.2/create-emf-compat.fabric-26.1.2.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/create-emf-compat.neoforge-1.21.1.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/create-emf-compat.neoforge-1.21.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/create-emf-compat.neoforge-1.21.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/create-emf-compat.neoforge-1.21.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.client.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-1.21.11/strm.create-emf-compat.fabric-1.21.11.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.client.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-26.1.2/strm.create-emf-compat.fabric-26.1.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/strm.create-emf-compat.neoforge-1.21.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge-1.21.1/strm.create-emf-compat.neoforge-1.21.1.main.iml" />
     </modules>
   </component>
 </project>

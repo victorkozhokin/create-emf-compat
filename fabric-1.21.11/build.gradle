@@ -43,9 +43,9 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    compileOnly files('libs/create-fly-1.21.11-6.0.9-5.jar')
-    modCompileOnly files('libs/entity_model_features-3.2.4-1.21.11-fabric.jar')
-    modCompileOnly files('libs/entity_texture_features_1.21.11-fabric-7.1.jar')
+    compileOnly 'maven.modrinth:create-fly:1.21.11-6.0.9-5'
+    modCompileOnly 'maven.modrinth:entity-model-features:3.2.4-fabric-1.21.11'
+    modCompileOnly 'maven.modrinth:entitytexturefeatures:7.1-fabric-1.21.11'
 }
 
 processResources {

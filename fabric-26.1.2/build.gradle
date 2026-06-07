@@ -46,9 +46,9 @@ dependencies {
     clientCompileOnly fabricApi.module("fabric-renderer-api-v1", project.fabric_version)
     clientCompileOnly fabricApi.module("fabric-model-loading-api-v1", project.fabric_version)
 
-    compileOnly files('libs/create-fly-26.1.2-6.0.9-1.jar')
-    compileOnly files('libs/entity_model_features-3.2.4-26.1-fabric.jar')
-    compileOnly files('libs/entity_texture_features_26.1-fabric-7.1.jar')
+    compileOnly 'maven.modrinth:create-fly:26.1.2-6.0.9-1'
+    compileOnly 'maven.modrinth:entity-model-features:3.2.4-fabric-26.1'
+    compileOnly 'maven.modrinth:entitytexturefeatures:7.1-fabric-26.1'
 }
 
 processResources {

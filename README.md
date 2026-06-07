@@ -1,4 +1,4 @@
-# Create - EMF Compat (Skyhook)
+# Create - EMF Compat (Skyhook and Grab Physics Objects)
 
 ## [Modrinth](https://modrinth.com/mod/create-emf-compat-(skyhook))
 
